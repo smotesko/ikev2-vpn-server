@@ -2,7 +2,7 @@ FROM alpine:3.6
 
 ENV HOST HOSTNAME
 
-LABEL tags="latest 1.0.2" \
+LABEL tags="stable" \
       build_ver="23-05-2018"
 
 RUN apk -U upgrade \
