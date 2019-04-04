@@ -6,7 +6,7 @@ Recipe to build [`nebukad/ikev2-vpn-alpine`](https://registry.hub.docker.com/u/n
 
 ### 1. Start the IKEv2 VPN Server
 
-    docker run --cap-add=NET_ADMIN -d --name vpn-server --restart=always -p 500:500/udp -p 4500:4500/udp -e "HOST=<SERVER_IP>OR<FQDN>" -e "HOSTNAME=<SERVER_NAME> nebukad/ikev2-vpn-server
+    docker run --cap-add=NET_ADMIN -d --name vpn-server --restart=always -p 500:500/udp -p 4500:4500/udp -e "HOST=<SERVER_IP>OR<FQDN>" -e "HOSTNAME=<SERVER_NAME> nebukad/ikev2-vpn-alpine
 ----------
 * Tags :
 Stable : old image based on alpine 3.6
